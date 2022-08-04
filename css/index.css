@@ -359,3 +359,128 @@
     padding-right: 34px;
     box-sizing: border-box;
 }
+
+/* recommend */
+.recommend {
+    width: 100%;
+    height: 624px;
+    background-color: #f7f7f7;
+    margin: 26px 0 34px 0;
+    padding-bottom: 36px;
+    overflow: hidden;
+}
+
+/* banner */
+.recommend .index-banner {
+    width: 1226px;
+    height: 120px;
+    margin: 26px auto 48px;
+}
+
+/* music */
+.music-con .m-title {
+    text-align: center;
+    font-size: 32px;
+    color: #333;
+}
+
+.music-con .m-tab {
+    text-align: center;
+    padding: 34px 0 36px 0;
+
+}
+
+.music-con .m-tab a {
+    font-size: 16px;
+    color: #333;
+    padding: 0 23px;
+}
+
+.music-con .m-tab a.active {
+    color: #31c27c;
+}
+
+.music-item .music-list>li {
+    width: 224px;
+    float: left;
+    margin-right: 26px;
+}
+
+.music-item .music-list>li:last-child {
+    margin-right: 0;
+}
+
+.music-item .music-list>li>a {
+    position: relative;
+    width: 224px;
+    height: 224px;
+    display: block;
+    overflow: hidden;
+}
+
+.music-list-title {
+    margin: 14px 0 6px 0;
+    font-size: 14px;
+}
+
+.music-list-title>a {
+    color: #333;
+}
+
+.music-list-title>a:hover {
+    color: #31c27c;
+}
+
+.music-item .music-list li span {
+    color: #999;
+}
+
+/* shadow */
+.img-mask {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    width: 224px;
+    height: 224px;
+    background-color: rgba(0, 0, 0, 0);
+    transition: all ease 2.5s;
+}
+
+.music-list>li>a:hover .img-mask {
+    background-color: rgba(0, 0, 0, .3)
+}
+
+.m-icon-play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin: -32.5px 0 0 -32.5px;
+    width: 65px;
+    height: 65px;
+    background-image: url(../images/icon-play.png);
+    opacity: 0;
+    transform: scale(.1);
+    transition: transform ease 1s;
+}
+
+.music-list>li>a:hover .m-icon-play {
+    transform: scale(1);
+    opacity: 1;
+}
+
+.music-list>li>a img {
+    transition: transform ease .6s;
+}
+
+.music-list>li>a:hover img {
+    transform: scale(1.5);
+}
+
+.music-item .music-list {
+    display: none;
+}
+
+.music-item .music-list.current {
+    display: block;
+}
