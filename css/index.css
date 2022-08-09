@@ -186,7 +186,6 @@
 .site-header .header-logo {
     float: left;
     margin-top: 23px;
-
 }
 
 .site-header .header-logo>a:active img {
@@ -195,7 +194,7 @@
 
 .site-header .header-nav {
     float: left;
-    margin-left: 190px;
+    margin-left: 130px;
 }
 
 .site-header .header-nav>ul>li {
