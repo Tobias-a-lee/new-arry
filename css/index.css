@@ -1289,3 +1289,11 @@
     text-align: center;
     padding-bottom: 57px;
 }
+
+@media screen and (max-width:1570px) {
+
+    .sidebar,
+    .nav-bar {
+        display: none;
+    }
+}
